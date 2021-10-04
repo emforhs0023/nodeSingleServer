@@ -23,4 +23,11 @@ router.get("/password/longTermUser",  function(req, res){
 	res.render("login/longTermUser.html")
 })
 
+router.get("/forgot/module/:id",  function(req, res){
+	res.render("login/forgotId.html")
+})
+router.get("/password/module/:id",  function(req, res){
+	res.render("login/loginChange.html")
+})
+
 module.exports = router;
